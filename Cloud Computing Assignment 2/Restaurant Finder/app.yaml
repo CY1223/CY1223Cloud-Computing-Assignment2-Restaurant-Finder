@@ -1,0 +1,97 @@
+runtime: php55
+api_version: 1
+threadsafe: true
+
+handlers:
+- url: /
+  script: login.php
+  
+- url: /login.php
+  script: login.php
+  
+- url: /register.php
+  script: register.php
+  
+- url: /logout.php
+  script: logout.php
+  
+- url: /aes.php
+  script: aes.php
+  
+- url: /index.php
+  script: index.php
+
+- url: /favourite.php
+  script: favourite.php
+  
+- url: /css
+  static_dir: css
+  
+- url: /javascript
+  static_dir: javascript
+  
+- url: /css/
+  script: CSS.css
+
+- url: /css/
+  script: animate.css
+
+- url: /css/
+  script: animsition.min.css
+
+- url: /css/
+  script: bootstrap.min.css
+  
+- url: /css/
+  script: daterangepicker.css
+
+- url: /css/
+  script: font-awesome.min.css
+
+- url: /css/
+  script: hamburgers.min.css
+
+- url: /css/
+  script: main.css
+
+- url: /css/
+  script: select2.min.css
+
+- url: /css/
+  script: util.css
+
+- url: /javascript/
+  script: jquery.googlemap.js
+
+- url: /javascript/
+  script: animsition.min.js
+  
+- url: /javascript/
+  script: bootstrap.min.js
+  
+- url: /javascript/
+  script: countdowntime.js
+  
+- url: /javascript/
+  script: daterangepicker.js
+  
+- url: /javascript/
+  script: jquery-3.2.1.min.js
+
+- url: /javascript/
+  script: main.js
+
+- url: /javascript/
+  script: moment.min.js
+
+- url: /javascript/
+  script: popper.js
+
+- url: /javascript/
+  script: select2.min.js
+# [START env]    
+env_variables:
+    MYSQL_DSN: mysql:unix_socket=/cloudsql/cloud-assignment-2-254823:australia-southeast1:s3557584-2019;dbname=users
+    MYSQL_USER: admin
+    MYSQL_PASSWORD: admin
+# [END env]
