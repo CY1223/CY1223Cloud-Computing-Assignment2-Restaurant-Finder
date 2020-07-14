@@ -1,7 +1,6 @@
 # s3557584-CY1223Cloud-Computing-Assignment2-Restaurant-Finder
 Simple Cloud Based Restaurant Finder
 Solution by Ching(s3557584@student.rmit.edu.au)
-Link Demo:https://cloud-assignment-2-254823.appspot.com/
 # Description
 
 # Languages, platform and services used:
